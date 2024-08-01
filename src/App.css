@@ -1,0 +1,85 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  width: calc(1920px - 2 * 200px);
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px 20px 30px;
+
+  border-radius: 10px;
+  background: rgb(0, 86, 254);
+}
+
+.btn-text {
+  color: rgb(255, 255, 255);
+  font-family: Wix Madefor Display;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* HEADER */
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 0px 0px 20px 20px;
+  background: rgb(255, 255, 255);
+  padding: 17px 0;
+}
+
+.header-section-logo {
+  width: 117px;
+  height: 46px;
+}
+
+.header-section-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+}
+
+.header-section-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.header-section-link-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  color: rgb(32, 32, 33);
+  font-family: Wix Madefor Display;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+}
