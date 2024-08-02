@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -22,6 +23,11 @@
 
   border-radius: 10px;
   background: rgb(0, 86, 254);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: rgb(0, 48, 142);
 }
 
 .btn-text {
@@ -43,6 +49,7 @@
   border-radius: 0px 0px 20px 20px;
   background: rgb(255, 255, 255);
   padding: 17px 0;
+  margin-bottom: 20px;
 }
 
 .header-section-logo {
@@ -50,24 +57,18 @@
   height: 46px;
 }
 
-.header-section-links {
+.nav-links {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
   padding: 0px;
   gap: 40px;
 }
 
-.header-section-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-}
-
-.header-section-link-text {
+.nav-link:link,
+.nav-link:visited {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -82,4 +83,115 @@
   letter-spacing: 0%;
   text-align: left;
   text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: rgb(0, 86, 254);
+  font-family: Wix Madefor Display;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.nav-link:hover .nav-link-image {
+  filter: invert(22%) sepia(94%) saturate(6232%) hue-rotate(222deg)
+    brightness(108%) contrast(102%);
+}
+
+.nav-link-text,
+.nav-link-image {
+  margin-bottom: 18px;
+  transition: all 0.3s;
+}
+
+.nav-link-selected {
+  border-bottom: 1px solid rgb(0, 86, 254);
+}
+
+.nav-link-selected,
+.nav-link-selected .nav-link-text {
+  color: rgb(0, 86, 254);
+}
+
+.nav-link-selected .nav-link-image {
+  filter: invert(22%) sepia(94%) saturate(6232%) hue-rotate(222deg)
+    brightness(108%) contrast(102%);
+  transform: rotate(180deg);
+}
+
+.header-submenu {
+  position: absolute;
+  top: 102px;
+  left: 0;
+  box-sizing: border-box;
+  border-radius: 40px;
+  background: rgb(239, 241, 247);
+}
+
+.header-submenu-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 40px;
+  gap: 20px;
+}
+
+.header-submenu-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+
+  border-radius: 20px;
+
+  background: rgb(255, 255, 255);
+}
+.header-submenu-card:hover {
+  border-radius: 20px;
+
+  box-shadow: 0px 10px 30px 0px rgba(210, 218, 227, 0.7),
+    0px 5px 13px 0px rgba(210, 218, 227, 0.3);
+  background: rgb(255, 255, 255);
+}
+.header-submenu-card-title {
+  color: rgb(32, 32, 33);
+  font-family: Wix Madefor Display;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.header-submenu-card:hover .header-submenu-card-title {
+  background: linear-gradient(
+    137.7deg,
+    rgb(57, 199, 236),
+    rgb(57, 199, 236),
+    rgb(0, 80, 236)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: Wix Madefor Display;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.header-submenu-card-desc {
+  color: rgb(32, 32, 33);
+  font-family: Wix Madefor Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
 }

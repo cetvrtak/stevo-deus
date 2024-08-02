@@ -1,55 +1,54 @@
-﻿import Button from './Button';
+﻿import { useState } from 'react';
+import Button from './Button';
+import NavLink from './NavLink';
+import Submenu from './Submenu';
 
 function Header() {
+  const links = [
+    { text: 'Продукт', arrow: true },
+    { text: 'Платформа' },
+    { text: 'Кейсы' },
+    { text: 'Партнёрам' },
+    { text: 'Блог' },
+    { text: 'О компании' },
+    { text: 'Контакты' },
+  ];
+
+  const [selected, setSelected] = useState(null);
+
   return (
     <div className="container">
-      <div className="box">
+      <div className="box" style={{ position: 'relative' }}>
         <header className="header-section">
-          <logo className="header-section-logo">
+          <div className="header-section-logo">
             <img src="src/assets/logo.png" alt="Logo" />
-          </logo>
-
-          <div className="header-section-links">
-            <div className="header-section-link">
-              <a href="#" className="header-section-link-text">
-                Продукты
-              </a>
-              <img src="src/assets/Arrow.svg" alt="arrow" />
-            </div>
-            <div className="header-section-link">
-              <a href="#" className="header-section-link-text">
-                Платформа
-              </a>
-            </div>
-            <div className="header-section-link">
-              <a href="#" className="header-section-link-text">
-                Кейсы
-              </a>
-            </div>
-            <div className="header-section-link">
-              <a href="#" className="header-section-link-text">
-                Партнёрам
-              </a>
-            </div>
-            <div className="header-section-link">
-              <a href="#" className="header-section-link-text">
-                Блог
-              </a>
-            </div>
-            <div className="header-section-link">
-              <a href="#" className="header-section-link-text">
-                О компании
-              </a>
-            </div>
-            <div className="header-section-link">
-              <a href="#" className="header-section-link-text">
-                Контакты
-              </a>
-            </div>
-
-            <Button>Свяжитесь с нами</Button>
           </div>
+
+          <nav className="menu">
+            <ul className="nav-links">
+              {links.map((link, i) => (
+                <NavLink
+                  text={link.text}
+                  isSelected={selected === i}
+                  onSelectLink={() => setSelected(selected === i ? null : i)}
+                  key={i}
+                >
+                  {link.arrow && (
+                    <img
+                      className="nav-link-image"
+                      src="src/assets/Arrow.svg"
+                      alt="arrow"
+                    />
+                  )}
+                </NavLink>
+              ))}
+
+              <Button>Свяжитесь с нами</Button>
+            </ul>
+          </nav>
         </header>
+
+        <Submenu selected={selected} />
       </div>
     </div>
   );
