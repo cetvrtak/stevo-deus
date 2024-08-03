@@ -1,0 +1,96 @@
+﻿@media screen and (max-width: 768px) {
+  /* GENERAL */
+  .container {
+    padding: 0 15px;
+  }
+
+  /* HEADER */
+  .header-section {
+    padding: 25px 0;
+    margin: 0;
+  }
+  .header-section-logo img {
+    width: 100px;
+    height: 40px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .header-submenu-mobile {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 100%;
+  }
+  .header-submenu-links {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    row-gap: 20px;
+  }
+  .header-submenu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+  }
+  .header-submenu-link a {
+    text-decoration: none;
+    color: rgb(32, 32, 33);
+    font-family: Wix Madefor Display;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .header-submenu-link a.products {
+    background: linear-gradient(
+      137.7deg,
+      rgb(57, 199, 236),
+      rgb(57, 199, 236),
+      rgb(0, 80, 236)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: Wix Madefor Display;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .header-submenu-sublinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+  }
+  .header-submenu-sublink {
+    color: rgb(32, 32, 33);
+    font-family: Wix Madefor Display;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  /* MAIN */
+  main {
+    margin-top: 95px;
+  }
+}

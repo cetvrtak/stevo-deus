@@ -2,6 +2,7 @@
 import Button from './Button';
 import NavLink from './NavLink';
 import Submenu from './Submenu';
+import SubmenuMobile from './SubmenuMobile';
 
 function Header() {
   const links = [
@@ -15,10 +16,11 @@ function Header() {
   ];
 
   const [selected, setSelected] = useState(null);
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   return (
-    <div className="container">
-      <div className="box" style={{ position: 'relative' }}>
+    <div className="container header-container">
+      <div className="box header-box">
         <header className="header-section">
           <div className="header-section-logo">
             <img src="src/assets/logo.png" alt="Logo" />
@@ -45,10 +47,22 @@ function Header() {
 
               <Button>Свяжитесь с нами</Button>
             </ul>
+            <div
+              className="hamburger-menu"
+              onClick={() => setHamburgerOpen(!hamburgerOpen)}
+            >
+              {hamburgerOpen && (
+                <img src="src/assets/close.png" alt="Close Icon" />
+              )}
+              {!hamburgerOpen && (
+                <img src="src/assets/hamburger.png" alt="Hamburger Menu Icon" />
+              )}
+            </div>
           </nav>
         </header>
 
         <Submenu selected={selected} />
+        <SubmenuMobile links={links} hamburgerOpen={hamburgerOpen} />
       </div>
     </div>
   );
