@@ -2,7 +2,7 @@
   return (
     <div className="arrow-btn-container">
       <img
-        src="src/assets/arrow-right.svg"
+        src="./src/assets/arrow-right.svg"
         alt="Arrow Icon"
         className="arrow-btn-icon"
         style={{ transform: `rotate(${rotation}deg)` }}

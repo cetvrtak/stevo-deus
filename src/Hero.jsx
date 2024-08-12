@@ -45,14 +45,17 @@ function Hero() {
               text="Заказы"
               cardId="card-3"
             >
-              <img src="src/assets/action-icon.svg" alt="Action Icon" />
+              <img src="./src/assets/action-icon.svg" alt="Action Icon" />
             </ServicesCard>
 
             <GraphFrame />
             <HitRate />
           </div>
           <div className="hero-section-graphics-mob">
-            <img src="src/assets/hero-full-mob.png" alt="Hero Section Image" />
+            <img
+              src="./src/assets/hero-full-mob.png"
+              alt="Hero Section Image"
+            />
           </div>
         </section>
       </div>

@@ -6,7 +6,7 @@ function HitRate() {
       <div className="hero-section-hit-rate-box">
         <CircularProgressBar progress="75">
           <img
-            src="src/assets/target-icon.svg"
+            src="./src/assets/target-icon.svg"
             alt="Target Icon"
             className="hero-section-hit-rate-icon"
           />
@@ -22,7 +22,7 @@ function HitRate() {
       <div className="hero-section-hit-rate-box">
         <CircularProgressBar progress="76">
           <img
-            src="src/assets/bag-icon-blue.svg"
+            src="./src/assets/bag-icon-blue.svg"
             alt="Bag Icon"
             className="hero-section-hit-rate-icon"
           />
