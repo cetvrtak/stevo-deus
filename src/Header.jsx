@@ -23,7 +23,7 @@ function Header() {
       <div className="box header-box">
         <header className="header-section">
           <div className="header-section-logo">
-            <img src="./src/assets/logo.png" alt="Logo" />
+            <img src="/src/assets/logo.png" alt="Logo" />
           </div>
 
           <nav className="menu">
@@ -38,7 +38,7 @@ function Header() {
                   {link.arrow && (
                     <img
                       className="nav-link-image"
-                      src="./src/assets/Arrow.svg"
+                      src="/src/assets/Arrow.svg"
                       alt="arrow"
                     />
                   )}
@@ -52,11 +52,11 @@ function Header() {
               onClick={() => setHamburgerOpen(!hamburgerOpen)}
             >
               {hamburgerOpen && (
-                <img src="./src/assets/close.png" alt="Close Icon" />
+                <img src="/src/assets/close.png" alt="Close Icon" />
               )}
               {!hamburgerOpen && (
                 <img
-                  src="./src/assets/hamburger.png"
+                  src="/src/assets/hamburger.png"
                   alt="Hamburger Menu Icon"
                 />
               )}
