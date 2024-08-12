@@ -3,6 +3,31 @@
   .container {
     padding: 0 15px;
   }
+  .btn {
+    padding: 13px 22px;
+  }
+  .btn-text {
+    color: rgb(255, 255, 255);
+    font-family: Wix Madefor Display;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .arrow-btn-container {
+    position: static;
+    width: 40px;
+    height: 40px;
+  }
+  .circle {
+    width: calc(36px * 0.4);
+    height: calc(36px * 0.4);
+  }
+  .circle::before {
+    width: calc(33px * 0.4);
+    height: calc(33px * 0.4);
+  }
 
   /* HEADER */
   .header-section {
@@ -64,7 +89,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     font-family: Wix Madefor Display;
     font-size: 14px;
     font-weight: 700;
@@ -92,5 +116,61 @@
   /* MAIN */
   main {
     margin-top: 95px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-section-text-box,
+  .hero-section-graphics-container {
+    width: 100%;
+  }
+  .hero-section-text-box {
+    padding: 40px 38px 0;
+    align-items: center;
+    gap: 40px;
+  }
+  .hero-section-text-container {
+    align-items: center;
+    gap: 20px;
+  }
+  .hero-section-description {
+    gap: 15px;
+  }
+  .hero-section-title {
+    /* Mobile/H1 */
+    background: linear-gradient(
+      90deg,
+      rgb(57, 199, 236),
+      rgb(57, 199, 236),
+      rgb(0, 80, 236)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: Wix Madefor Display;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .hero-section-subtitle {
+    color: rgb(32, 32, 33);
+    font-family: Wix Madefor Display;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .hero-section-graphics-container {
+    display: none;
+  }
+  .hero-section-graphics-mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
