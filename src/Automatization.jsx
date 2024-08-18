@@ -18,7 +18,7 @@ function Automatization() {
           <div className="automatization-section-card">
             <div className="automatization-section-card-content">
               <img
-                src="./src/assets/automatization-pie-chart.png"
+                src="./automatization-pie-chart.png"
                 alt="Pie Chart 42%"
                 className="automatization-section-card-chart"
               />

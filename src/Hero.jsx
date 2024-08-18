@@ -31,28 +31,24 @@ function Hero() {
           <div className="hero-section-graphics-container">
             <SalesFrame />
             <ServicesCard
-              icon="src/assets/chart-icon.svg"
+              icon="/chart-icon.svg"
               text="Аналитика"
               cardId="card-1"
             />
             <ServicesCard
-              icon="src/assets/users-icon.svg"
+              icon="/users-icon.svg"
               text="Клиенты"
               cardId="card-2"
             />
-            <ServicesCard
-              icon="src/assets/bag-icon.svg"
-              text="Заказы"
-              cardId="card-3"
-            >
-              <img src="/src/assets/action-icon.svg" alt="Action Icon" />
+            <ServicesCard icon="/bag-icon.svg" text="Заказы" cardId="card-3">
+              <img src="/action-icon.svg" alt="Action Icon" />
             </ServicesCard>
 
             <GraphFrame />
             <HitRate />
           </div>
           <div className="hero-section-graphics-mob">
-            <img src="/src/assets/hero-full-mob.png" alt="Hero Section Image" />
+            <img src="/hero-full-mob.png" alt="Hero Section Image" />
           </div>
         </section>
       </div>

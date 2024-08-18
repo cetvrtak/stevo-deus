@@ -6,7 +6,7 @@
         <div className="hero-section-sales-relative-numbers">
           <span className="hero-section-sales-relative-increase">+2.5%</span>
           <img
-            src="/src/assets/arrow-increase.svg"
+            src="/arrow-increase.svg"
             alt="Arrow Up Green"
             className="hero-section-sales-relative-icon"
           />
