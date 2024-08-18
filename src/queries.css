@@ -171,6 +171,7 @@
   .automatization-section {
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 60px;
   }
   .automatization-section-title,
   .automatization-section-desc {
