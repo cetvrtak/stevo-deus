@@ -3,6 +3,7 @@ import './App.css';
 import './queries.css';
 import Header from './Header';
 import Hero from './Hero';
+import Automatization from './Automatization';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 
       <main>
         <Hero />
+        <Automatization />
       </main>
     </>
   );
